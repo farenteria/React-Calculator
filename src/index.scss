@@ -1,0 +1,42 @@
+$container-width: 50%;
+$container-height: 150px;
+$primary-color: #9CFC97;
+$secondary-color: #E6FAFC;
+$tertiary-color: #353D2F;
+
+.container{
+    width: $container-width;
+    height: $container-height;
+    color: #ffffff;
+    margin: 0 auto;
+
+    .item{
+        text-align: center;
+        width: 100%;
+        display: flex;
+    }
+
+    .buttons{
+        flex: 1 1 0;
+        height: 80px;
+    }
+}
+
+.output{
+    height: 120px;
+    background-color: $tertiary-color;
+
+    p{
+        text-align: right;
+        padding: 10px;
+        font-size: 2em;
+    }
+}
+
+.green{
+    background-color: $primary-color;
+}
+
+.blue{
+    background-color: $secondary-color;
+}

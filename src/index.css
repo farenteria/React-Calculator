@@ -1,5 +1,26 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
+.container {
+  width: 50%;
+  height: 150px;
+  color: #ffffff;
+  margin: 0 auto; }
+  .container .item {
+    text-align: center;
+    width: 100%;
+    display: flex; }
+  .container .buttons {
+    flex: 1 1 0;
+    height: 80px; }
+
+.output {
+  height: 120px;
+  background-color: #353D2F; }
+  .output p {
+    text-align: right;
+    padding: 10px;
+    font-size: 2em; }
+
+.green {
+  background-color: #9CFC97; }
+
+.blue {
+  background-color: #E6FAFC; }
