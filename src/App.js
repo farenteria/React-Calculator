@@ -26,16 +26,25 @@ class App extends Component {
 
   buttonClick(name){
     if(name === "*" || name === "+" || name === "-" || name === "/" || name === "%"){
-      this.setState({operator: name});
+      this.setState({
+        operator: name,
+        result: name
+      });
     }else if(name === "="){
       this.doMath();
     }else if(name === "AC"){
       this.clearCalc();
     }else if(!name.isNaN){
       if(this.state.firstN === null){
-        this.setState({firstN: name})
+        this.setState({
+          firstN: name,
+          result: name
+        });
       }else if (this.state.secondN === null){
-        this.setState({secondN: name});
+        this.setState({
+          secondN: name,
+          result: name
+        });
       }
     }
   }
@@ -69,6 +78,8 @@ class App extends Component {
       case "%":
         res = f % s;
         break;
+      default:
+        // theoretically, will never reach here
     }
 
     this.setState({result: res});
