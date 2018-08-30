@@ -16,7 +16,7 @@ class App extends Component {
       operator: null,
       firstN: null,
       secondN: null,
-      result: 0.00
+      result: 0.00.toFixed(2)
     }
   }
 
@@ -28,22 +28,23 @@ class App extends Component {
     if(name === "*" || name === "+" || name === "-" || name === "/" || name === "%"){
       this.setState({
         operator: name,
-        result: name
+        result: name,
       });
     }else if(name === "="){
       this.doMath();
     }else if(name === "AC"){
+      this.setState({result: 0.00.toFixed(2)});
       this.clearCalc();
     }else if(!name.isNaN){
       if(this.state.firstN === null){
         this.setState({
           firstN: name,
-          result: name
+          result: name,
         });
       }else if (this.state.secondN === null){
         this.setState({
           secondN: name,
-          result: name
+          result: name,
         });
       }
     }
