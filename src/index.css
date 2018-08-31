@@ -1,6 +1,5 @@
 .container {
   width: 50%;
-  height: 150px;
   color: #ffffff;
   margin: 0 auto; }
   .container .item {
@@ -17,7 +16,7 @@
   .output p {
     text-align: right;
     padding: 10px;
-    font-size: 2em; }
+    font-size: 4em; }
 
 .green {
   background-color: #9CFC97; }

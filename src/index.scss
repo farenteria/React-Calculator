@@ -1,12 +1,10 @@
 $container-width: 50%;
-$container-height: 150px;
 $primary-color: #9CFC97;
 $secondary-color: #E6FAFC;
 $tertiary-color: #353D2F;
 
 .container{
     width: $container-width;
-    height: $container-height;
     color: #ffffff;
     margin: 0 auto;
 
@@ -29,7 +27,7 @@ $tertiary-color: #353D2F;
     p{
         text-align: right;
         padding: 10px;
-        font-size: 2em;
+        font-size: 4em;
     }
 }
 
